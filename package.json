@@ -1,0 +1,15 @@
+{
+  "name": "valorant-api",
+  "version": "1.0.0",
+  "description": "An Api for Valorants Agents ",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server"
+  },
+  "author": "Naoufel Bahassoune",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

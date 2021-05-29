@@ -4,7 +4,10 @@
   "description": "An Api for Valorants Agents ",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon server"
+    "test": "nodemon server",
+    "start": "set NODE_ENV=developement&& node server.js",
+    "start-prod": "set NODE_ENV=production&& node server.js"    
+   
   },
   "author": "Naoufel Bahassoune",
   "license": "ISC",

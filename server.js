@@ -2,6 +2,7 @@ const express = require('express');
 const agents = require('./valorant.json');
 const maps = require('./map.json')
 const app = express();
+const  serverless =require("serverless-http");
 let port = process.env.Port || 3000;
 
 app.get('/', (req, res) => {
@@ -32,3 +33,4 @@ app.get('/api/map', (req, res) => {
 app.listen(port, () => {
     console.log(`Server started on ${port}`);
 });
+module.exports.handler = serverless(app);
